@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Cutieee 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1 class="fade-in">Happy Birthday My Sweet Woman! 🎂💘</h1>
+    <p class="intro fade-in-delay">Click the heart below to reveal my wishes... 😘</p>
+
+    <div class="heart bounce" onclick="showMessage()">💗</div>
+
+    <div id="messageBox" class="hidden">
+      <p class="romantic">
+        My sweet beautiful girl, I wish you a happy birthday. <br/>
+        You're an amazing woman that I've met in my life. I really love you so much. 🎉<br/>
+        <em>Thank you for giving me the opportunity to experience your love</em>
+      </p>
+      <button onclick="moreLove()">More Cheekiness Royya ❤️</button>
+      <p id="flirtyLine" class="flirty"></p>
+    </div>
+  </div>
+
+  <canvas id="hearts"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

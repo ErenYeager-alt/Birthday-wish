@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, #ffe0e9, #fff6f6);
+  font-family: 'Comic Sans MS', cursive;
+  color: #c0392b;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 10vh;
+}
+
+.heart {
+  font-size: 80px;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.hidden {
+  display: none;
+}
+
+#messageBox {
+  margin-top: 30px;
+}
+
+.romantic {
+  font-size: 1.3em;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 20px;
+  display: inline-block;
+  margin: 20px auto;
+  max-width: 80%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+.flirty {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #8e44ad;
+  padding: 10px;
+  background: #fdf1f6;
+  border-radius: 12px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in forwards;
+  opacity: 0;
+}
+
+.fade-in-delay {
+  animation: fadeIn 2s ease-in 1s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
